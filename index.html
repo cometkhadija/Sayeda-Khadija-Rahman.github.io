@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <nav id="navbar">
@@ -24,14 +26,183 @@
     <h1>Home</h1>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section about-section">
     <h1>About Me</h1>
   </section>
 
-  <section id="projects" class="section">
-    <h1>Projects</h1>
+  <section id="projects" class="section projects-section">
+    <h1 class="projects-title">My Projects</h1>
+
+    <div class="projects-grid">
+
+      <!-- Project Card -->
+      <div class="project-card">
+        <div class="project-status">
+          <span class="status-icon">⏳</span>
+          <span class="status-text">Ongoing</span>
+        </div>
+
+        <div class="project-image">
+          <img src="https://via.placeholder.com/80" alt="Project Icon">
+        </div>
+
+        <h3 class="project-name">JU Creator Hub</h3>
+
+        <p class="project-desc">
+          JU Creator Hub is a web-based platform designed for students of Jahangirnagar University
+          to showcase their creative works, collaborate on projects, and explore opportunities...
+        </p>
+
+        <div class="tech-stack">
+          <span class="tech">HTML</span>
+          <span class="tech">CSS</span>
+          <span class="tech">JavaScript</span>
+          <span class="tech">Python</span>
+          <span class="tech">Django</span>
+        </div>
+
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- Hostel Companion -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Ongoing</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="Hostel Companion"></div>
+        <h3 class="project-name">Hostel Companion</h3>
+        <p class="project-desc">
+          Mobile app to assist hostel students with notices, meal schedules, and room info.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Flutter</span>
+          <span class="tech">Dart</span>
+          <span class="tech">Firebase</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!-- Flower Detection -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Planned</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="Flower Detection"></div>
+        <h3 class="project-name">Flower Detection</h3>
+        <p class="project-desc">
+          Mobile app for real-time flower detection using deep learning.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Android Studio</span>
+          <span class="tech">Java</span>
+          <span class="tech">TensorFlow Lite</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!-- Transport System -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Planned</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="Transport System"></div>
+        <h3 class="project-name">Transport System</h3>
+        <p class="project-desc">
+          React-based system for tracking routes, vehicles, and schedules efficiently.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">React</span>
+          <span class="tech">JavaScript</span>
+          <span class="tech">REST API</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!-- Consumer Behaviour -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Ongoing</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="Consumer Behaviour"></div>
+        <h3 class="project-name">Consumer Behaviour Patterns During Floods</h3>
+        <p class="project-desc">
+          Data mining project analyzing consumer behavior during floods in Bangladesh.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Python</span>
+          <span class="tech">Pandas</span>
+          <span class="tech">Scikit-learn</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!-- ABC (IoT) -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Planned</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="ABC IoT"></div>
+        <h3 class="project-name">ABC (IoT Project)</h3>
+        <p class="project-desc">
+          IoT system for monitoring & controlling environment using sensors and automation.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Arduino</span>
+          <span class="tech">IoT</span>
+          <span class="tech">C++</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+
+      <!-- Explainable AI -->
+      <div class="project-card">
+        <div class="project-status"><span class="status-icon">⏳</span>Planned</div>
+        <div class="project-image"><img src="https://via.placeholder.com/80" alt="Explainable AI"></div>
+        <h3 class="project-name">Explainable AI</h3>
+        <p class="project-desc">
+          AI project focused on explainable AI using symbolic languages (Prolog, Lisp).
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Prolog</span>
+          <span class="tech">Lisp</span>
+          <span class="tech">AI</span>
+        </div>
+        <div class="project-actions">
+          <button class="view-btn">View Details</button>
+          <a href="https://github.com/cometkhadija" target="_blank" class="github-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
   </section>
+
+
 
   <script src="script.js"></script>
 </body>
+
 </html>
