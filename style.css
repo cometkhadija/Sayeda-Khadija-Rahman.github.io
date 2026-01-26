@@ -17,8 +17,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #4b3b2a; /* bottle brown */
-  color: white;
+  background: #192b2a; /* bottle brown */
+  color: rgb(255, 255, 255);
   transition: 0.3s ease;
   z-index: 1000;
 }
@@ -50,7 +50,7 @@ nav.scrolled {
 }
 
 .hero {
-  background: #4b3b2a; /* same bottle brown as navbar */
+  background: #192b2a; /* same bottle brown as navbar */
   color: white;
 }
 
