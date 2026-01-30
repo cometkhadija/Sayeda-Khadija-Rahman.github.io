@@ -150,6 +150,15 @@ h1 {
 }
 .tech:hover { transform: translateY(-3px); }
 
+.tech i {
+  font-size: 18px;
+}
+
+.fa-html5 { color: #e34f26; }
+.fa-css3-alt { color: #1572b6; }
+.fa-js { color: #f7df1e; }
+.fa-python { color: #3776ab; }
+
 /* Actions */
 .project-actions {
   display: flex;
