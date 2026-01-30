@@ -166,19 +166,45 @@ h1 {
   align-items: center;
   gap: 15px;
 }
+
 .view-btn {
   background: white;
   color: #124243;
   border: none;
-  padding: 8px 16px;
+
+  /* 🔑 size control */
+  height: 36px;
+  padding: 0 16px;
+
   border-radius: 20px;
   font-size: 13px;
   cursor: pointer;
-}
-.view-btn:hover { opacity: 0.85; }
 
-.github-link img { width: 26px; height: 26px; transition: transform 0.2s ease; }
-.github-link img:hover { transform: scale(1.1); }
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  line-height: 36px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.view-btn:hover {
+  opacity: 0.85;
+}
+
+/* 🔧 normalize GitHub icon */
+.github-link img {
+  width: 16px;
+  height: 16px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.github-link:hover img {
+  transform: scale(1.1);
+}
+
 
 /* Responsive Grid */
 @media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2,1fr); gap:20px; } }
