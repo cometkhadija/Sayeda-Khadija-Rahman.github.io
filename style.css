@@ -145,13 +145,13 @@ h1 {
   background: rgba(255,255,255,0.15);
   padding: 6px 12px;
   border-radius: 12px;
-  font-size: 12px;
+  font-size: 14px;
   transition: transform 0.2s ease;
 }
 .tech:hover { transform: translateY(-3px); }
 
 .tech i {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .fa-html5 { color: #e34f26; }
