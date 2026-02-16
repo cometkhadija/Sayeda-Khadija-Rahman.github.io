@@ -45,13 +45,13 @@ nav.scrolled { background: black; }
   padding-right: clamp(20px, 6vw, 40px);
 }
 
-.hero { background: #124243; color: white; }
+.hero { background: #192b2a; color: white; }
 
 h1 { font-size: clamp(32px, 5vw, 48px); }
 
-.about-section { background: #467879; color: #f8f8f8; }
+.about-section { background: #f6f7ea; color: #0c0c0c; }
 
-.projects-section { background: #124243; color: white; }
+.projects-section { background: #94b499; color: rgb(19, 18, 18); }
 
 .projects-title {
   text-align: center;
@@ -72,7 +72,7 @@ h1 { font-size: clamp(32px, 5vw, 48px); }
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #1a4d4f;
+  background: #165948;
   border-radius: 16px;
   overflow: hidden;
   color: white;
