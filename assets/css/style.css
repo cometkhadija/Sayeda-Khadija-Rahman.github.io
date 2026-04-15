@@ -35,7 +35,7 @@ body {
 .nav-left {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ffd54f;
+  color: #faf9f6;
 }
 
 .nav-right a {
@@ -58,7 +58,7 @@ body {
 
 /* Home Section - Emerald Green */
 #home {
-  background-color: #0a3d2f;        /* Dark Emerald */
+  background-color: #0d2921;        /* Dark Emerald */
   text-align: center;
   display: flex;
   flex-direction: column;
