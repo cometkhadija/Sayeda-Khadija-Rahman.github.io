@@ -7,123 +7,171 @@
   
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- ===== NAVIGATION ===== -->
   <nav id="navbar">
     <div class="nav-left">Sayeda Khadija Rahman</div>
     <div class="nav-right">
-      <a href="#home">🏠 Home</a>
-      <a href="#about">👩‍💻 About Me</a>
-      <a href="resume/index.html">📄 Resume</a>
+      <a href="#home" class="active">🏠 Home</a>
+      <a href="#about">👩‍💻 About</a>
       <a href="#projects">🚀 Projects</a>
-      <a href="mailto:sayedakhadija@gmail.com?subject=Hello%20Khadija">📩 Contact</a>
+      <a href="#contact">📩 Contact</a>
     </div>
   </nav>
 
-  <!-- ==================== HOME SECTION ==================== -->
-  <section id="home" class="hero-section">
+  <!-- ===== HOME SECTION ===== -->
+  <section class="section" id="home">
     <div class="home-container">
-      <!-- Left Side - Photo -->
       <div class="home-image">
-        <img src="assets/images/profile.jpg" alt="Sayeda Khadija Rahman" />
+        <img src="assets/images/profile.jpg" alt="Sayeda Khadija Rahman">
       </div>
-
-      <!-- Right Side - Content -->
       <div class="home-content">
-        <p class="greeting">My name is</p>
+        <p class="greeting">👋 Hello, I'm</p>
         <h1 class="name">Sayeda Khadija Rahman</h1>
-        <h2 class="title">Aspiring SQA Engineer</h2>
-        
+        <p class="title">AI/ML Researcher & Full-Stack Developer</p>
         <p class="description">
-          Passionate 4th year CSE student with a strong interest in Software Quality Assurance (SQA). 
-          I love finding bugs, ensuring software reliability, and learning automation testing. 
-          My dream is to contribute to building high-quality, user-friendly applications.
+          Passionate about building intelligent systems with deep learning,
+          natural language processing, and modern web technologies.
         </p>
+        <a href="resume/index.html" class="cv-btn">
+          <i class="fas fa-file-pdf"></i> View Resume
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <div class="home-actions">
-          <a href="resume/index.html" class="cv-btn" target="_blank">
-            📄 Download My CV
-          </a>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <p>I'm a passionate AI/ML researcher and full-stack developer with expertise in building intelligent systems. Currently pursuing research in graph neural networks and natural language processing.</p>
+        <p>With a strong background in both academia and industry, I bridge the gap between cutting-edge research and practical applications.</p>
+        <div class="skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Django</span>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat">
+          <h3>3+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat">
+          <h3>10+</h3>
+          <p>Projects</p>
+        </div>
+        <div class="stat">
+          <h3>5+</h3>
+          <p>Research Papers</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== ABOUT SECTION ==================== -->
-  <section id="about" class="section about-section">
-    <h1>About Me</h1>
-    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8;">
-      I am a 4th year Computer Science and Engineering student at Jahangirnagar University. 
-      Currently focusing on Software Quality Assurance, Testing, and Mobile App Development with Flutter. 
-      I enjoy solving problems and building clean, reliable software.
-    </p>
-    <!-- এখানে আরও কনটেন্ট যোগ করতে পারো পরে -->
-  </section>
-
-  <!-- ==================== PROJECTS SECTION ==================== -->
-  <section id="projects" class="section projects-section">
-    <h1 class="projects-title">My Projects</h1>
-
-    <div class="projects-grid">
-
-      <!-- JU Creator Hub -->
-      <div class="project-card">
-        <div class="project-status"><span class="status-icon">⏳</span> Ongoing</div>
-        <div class="project-image">
-          <img src="media/creator_hub.png" alt="JU Creator Hub">
-        </div>
-        <div class="project-content">
-          <h3 class="project-name">JU Creator Hub</h3>
-          <p class="project-desc">
-            Web-based platform for Jahangirnagar University students to showcase creative works, 
-            collaborate on projects, and explore opportunities.
-          </p>
-          <div class="tech-stack">
-            <span class="tech"><i class="fa-brands fa-html5"></i> HTML</span>
-            <span class="tech"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-            <span class="tech"><i class="fa-brands fa-js"></i> JavaScript</span>
-            <span class="tech"><i class="fa-brands fa-python"></i> Python</span>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="projects-container">
+      <h2 class="projects-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>AI-Powered Analytics Platform</h3>
+          <p>Advanced analytics platform with real-time data processing and AI-based insights.</p>
+          <div class="tech-tags">
+            <span>React</span>
+            <span>Python</span>
+            <span>Django</span>
           </div>
-          <div class="project-actions">
-            <a href="projects/ju_creator_hub.html" class="view-btn">View Details</a>
-            <a href="https://github.com/cometkhadija/Prideproject.git" target="_blank" class="github-link">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-            </a>
+        </div>
+        <div class="project-card">
+          <h3>Fraud Detection System</h3>
+          <p>Graph Neural Network based system for detecting financial fraud patterns.</p>
+          <div class="tech-tags">
+            <span>PyTorch</span>
+            <span>GNN</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Knowledge Graph QA</h3>
+          <p>Semantic question answering system over knowledge graphs for low-resource languages.</p>
+          <div class="tech-tags">
+            <span>Neo4j</span>
+            <span>Python</span>
+            <span>NLP</span>
           </div>
         </div>
       </div>
-
-      <!-- Hostel Companion -->
-      <div class="project-card">
-        <div class="project-status"><span class="status-icon">⏳</span> Ongoing</div>
-        <div class="project-image">
-          <img src="https://via.placeholder.com/300x180/165948/ffffff?text=Hostel+Companion" alt="Hostel Companion">
-        </div>
-        <div class="project-content">
-          <h3 class="project-name">Hostel Companion</h3>
-          <p class="project-desc">
-            Mobile app to assist hostel students with notices, meal schedules, room info, and complaints.
-          </p>
-          <div class="tech-stack">
-            <span class="tech">Flutter</span>
-            <span class="tech">Dart</span>
-            <span class="tech">Firebase</span>
-          </div>
-          <div class="project-actions">
-            <a href="projects/hostel-companion.html" class="view-btn">View Details</a>
-            <a href="https://github.com/cometkhadija/my_app.git" target="_blank" class="github-link">
-              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- বাকি প্রজেক্টগুলো এখানে একই ফরম্যাটে যোগ করো -->
-
     </div>
   </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>sayedakhadija@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <span>+880 1234 567890</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Dhaka, Bangladesh</span>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">
+          Send Message <i class="fas fa-paper-plane"></i>
+        </button>
+        <div id="formStatus"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM NAVIGATION (Mobile) ===== -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#home" class="active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="#about">
+      <i class="fas fa-user"></i>
+      <span>About</span>
+    </a>
+    <a href="#resume">
+      <i class="fas fa-file-alt"></i>
+      <span>Resume</span>
+    </a>
+    <a href="#projects">
+      <i class="fas fa-code"></i>
+      <span>Projects</span>
+    </a>
+    <a href="#contact">
+      <i class="fas fa-envelope"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
 
   <script src="assets/js/script.js" defer></script>
 </body>
