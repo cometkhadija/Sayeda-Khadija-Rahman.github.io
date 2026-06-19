@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sayeda Khadija Rahman | Portfolio</title>
-  
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- ===== NAVIGATION ===== -->
@@ -31,10 +33,11 @@
       <div class="home-content">
         <p class="greeting">👋 Hello, I'm</p>
         <h1 class="name">Sayeda Khadija Rahman</h1>
-        <p class="title">AI/ML Researcher & Full-Stack Developer</p>
+        <p class="title">Aspiring Software Quality Assurance Engineer & Data Science Research Enthusiast</p>
         <p class="description">
-          Passionate about building intelligent systems with deep learning,
-          natural language processing, and modern web technologies.
+          Passionate about software testing, quality assurance, and developing reliable applications. Strong
+          interest in data science research, analytics, and applying technology
+          to solve real-world problems.
         </p>
         <a href="resume/index.html" class="cv-btn">
           <i class="fas fa-file-pdf"></i> View Resume
@@ -48,29 +51,23 @@
     <div class="about-grid">
       <div class="about-content">
         <h2 class="section-title">About Me</h2>
-        <p>I'm a passionate AI/ML researcher and full-stack developer with expertise in building intelligent systems. Currently pursuing research in graph neural networks and natural language processing.</p>
-        <p>With a strong background in both academia and industry, I bridge the gap between cutting-edge research and practical applications.</p>
+        <p>Passionate about ensuring software quality through testing, quality assurance practices, and continuous
+          improvement.
+          Interested in data science and machine learning research, with a focus on applying analytical and
+          problem-solving skills to
+          real-world challenges. Experienced in web application development, software testing, and building reliable,
+          user-focused solutions.</p>
+        <p>With a strong background in both academia and industry, I bridge the gap between cutting-edge research and
+          practical applications.</p>
         <div class="skills">
+          <span class="skill-tag">Manual Testing</span>
+          <span class="skill-tag">Test Case Design</span>
+          <span class="skill-tag">Bug Reporting</span>
+          <span class="skill-tag">SQL</span>
           <span class="skill-tag">Python</span>
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">Node.js</span>
           <span class="skill-tag">Django</span>
-        </div>
-      </div>
-      <div class="about-stats">
-        <div class="stat">
-          <h3>3+</h3>
-          <p>Years Experience</p>
-        </div>
-        <div class="stat">
-          <h3>10+</h3>
-          <p>Projects</p>
-        </div>
-        <div class="stat">
-          <h3>5+</h3>
-          <p>Research Papers</p>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
         </div>
       </div>
     </div>
@@ -79,75 +76,176 @@
   <!-- ===== PROJECTS SECTION ===== -->
   <section class="section" id="projects">
     <div class="projects-container">
-      <h2 class="projects-title">Featured Projects</h2>
+      <div class="projects-header">
+        <h2 class="projects-title">Projects</h2>
+        <p class="projects-subtitle">
+          I build projects that solve real-world problems. Each project reflects my passion for
+          combining cutting-edge AI/ML research with full-stack development to create
+          meaningful and impactful solutions.
+        </p>
+      </div>
+
       <div class="projects-grid">
-        <div class="project-card">
-          <h3>AI-Powered Analytics Platform</h3>
-          <p>Advanced analytics platform with real-time data processing and AI-based insights.</p>
-          <div class="tech-tags">
-            <span>React</span>
-            <span>Python</span>
-            <span>Django</span>
+
+        <!-- Project Card 1 -->
+        <div class="project-card" data-project="1">
+          <div class="project-image-wrapper">
+            <img src="assets/images/creator_hub.png" alt="CreatorHub Ecommerce Platform" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">CreatorHub Ecommerce Platform</h3>
+            <p class="project-description">A student-powered e-commerce platform dedicated to the creative and
+              entrepreneurial minds of Jahangirnagar University.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag more">+1</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-view" data-project="1">View Details</button>
+              <a href="https://github.com" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <h3>Fraud Detection System</h3>
-          <p>Graph Neural Network based system for detecting financial fraud patterns.</p>
-          <div class="tech-tags">
-            <span>PyTorch</span>
-            <span>GNN</span>
-            <span>Python</span>
+
+        <!-- Project Card 2 -->
+        <div class="project-card" data-project="2">
+          <div class="project-image-wrapper">
+            <img src="assets/images/iPhone 16 - 3.png" alt="AI-Powered Career Plan Adviser" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">AI-Powered Career Plan Adviser</h3>
+            <p class="project-description">An intelligent Android application that leverages AI to provide personalized
+              career guidance for Computer Science and Engineering students.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Android Studio</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag more">+3</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-view" data-project="2">View Details</button>
+              <a href="https://github.com" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <h3>Knowledge Graph QA</h3>
-          <p>Semantic question answering system over knowledge graphs for low-resource languages.</p>
-          <div class="tech-tags">
-            <span>Neo4j</span>
-            <span>Python</span>
-            <span>NLP</span>
+
+        <!-- Project Card 3 -->
+        <div class="project-card" data-project="3">
+          <div class="project-image-wrapper">
+            <img src="assets/images/project3-logo.png" alt="Knowledge Graph QA System" class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Manual Quality Assurance and System Testing of an AI-Powered Career Plan Adviser Mobile Application</h3>
+            <p class="project-description">The AI-Powered Career Plan Adviser is a mobile-first application designed to provide students
+with structured, year-wise, and goal-oriented career guidance.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Neo4j</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NLP</span>
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag more">+1</span>
+            </div>
+            <div class="project-buttons">
+              <button class="btn-view" data-project="3">View Details</button>
+              <a href="https://github.com" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section class="section" id="contact">
-    <div class="contact-container">
-      <div class="contact-info">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <span>sayedakhadija@gmail.com</span>
+  <!-- ===== PROJECT DETAIL MODAL ===== -->
+  <div class="modal-overlay" id="projectModal" onclick="closeProjectOutside(event)">
+    <div class="modal-content">
+      <h2 id="modalTitle">Project Title</h2>
+      <div class="modal-body">
+        <p id="modalDescription">Full project description goes here.</p>
+        <div class="modal-tech">
+          <h4>Technologies Used</h4>
+          <div id="modalTech" class="tech-tags-modal"></div>
         </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <span>+880 1234 567890</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Dhaka, Bangladesh</span>
-        </div>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
+        <div class="modal-features">
+          <h4>Key Features</h4>
+          <ul id="modalFeatures">
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ul>
         </div>
       </div>
-      <form class="contact-form" id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <input type="text" id="subject" placeholder="Subject">
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">
-          Send Message <i class="fas fa-paper-plane"></i>
-        </button>
-        <div id="formStatus"></div>
-      </form>
+      <div class="modal-actions">
+        <a href="#" id="modalGithub" target="_blank" class="modal-github-btn">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <button class="modal-close-btn" onclick="closeProject()">Close</button>
+      </div>
     </div>
-  </section>
+  </div>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="section" id="contact">
+  <div class="contact-full">
+    <!-- Left: About Me -->
+    <div class="contact-left-full">
+      <h3>Let's Connect</h3>
+      <p>I'm always open to discussing new projects, research collaborations, or exciting opportunities in AI/ML and full-stack development. Feel free to reach out—I'd love to hear from you!</p>
+      <div class="contact-sincerity-full">
+        <span>💡 Passionate about AI/ML</span>
+        <span>🚀 Full-Stack Developer</span>
+        <span>📚 Lifelong Learner</span>
+      </div>
+    </div>
+
+    <!-- Middle: Contact Info -->
+    <div class="contact-middle-full">
+      <div class="contact-item-full">
+        <i class="fas fa-envelope"></i>
+        <span>sayedakhadija@gmail.com</span>
+      </div>
+      <div class="contact-item-full">
+        <i class="fas fa-phone"></i>
+        <span>+880 1234 567890</span>
+      </div>
+      <div class="contact-item-full">
+        <i class="fab fa-github"></i>
+        <a href="#" target="_blank">github.com/sayedakhadija</a>
+      </div>
+      <div class="contact-item-full">
+        <i class="fab fa-linkedin-in"></i>
+        <a href="#" target="_blank">linkedin.com/in/sayedakhadija</a>
+      </div>
+    </div>
+
+    <!-- Right: Skills Box -->
+    <div class="contact-right-full">
+      <h4>Skills</h4>
+      <div class="skills-grid-full">
+        <span class="skill-tag-full">Manual Testing</span>
+        <span class="skill-tag-full">Test Case Design</span>
+        <span class="skill-tag-full">Bug Reporting</span>
+        <span class="skill-tag-full">SQL</span>
+        <span class="skill-tag-full">Python</span>
+        <span class="skill-tag-full">Django</span>
+        <span class="skill-tag-full">Git</span>
+        <span class="skill-tag-full">GitHub</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- ===== BOTTOM NAVIGATION (Mobile) ===== -->
   <nav class="bottom-nav" id="bottomNav">
@@ -158,10 +256,6 @@
     <a href="#about">
       <i class="fas fa-user"></i>
       <span>About</span>
-    </a>
-    <a href="#resume">
-      <i class="fas fa-file-alt"></i>
-      <span>Resume</span>
     </a>
     <a href="#projects">
       <i class="fas fa-code"></i>
@@ -175,4 +269,5 @@
 
   <script src="assets/js/script.js" defer></script>
 </body>
+
 </html>
