@@ -20,6 +20,7 @@
       <a href="#home" class="active">🏠 Home</a>
       <a href="#about">👩‍💻 About</a>
       <a href="#projects">🚀 Projects</a>
+      <a href="#research">🔬 Research</a>
       <a href="#contact">📩 Contact</a>
     </div>
   </nav>
@@ -38,11 +39,12 @@
       <div class="home-content">
         <p class="greeting">👋 Hello, I'm</p>
         <h1 class="name">Sayeda Khadija Rahman</h1>
-        <p class="title">Aspiring Software Quality Assurance Engineer & Data Science Research Enthusiast</p>
+        <p class="title">Aspiring AI/ML Engineer & Research Enthusiast</p>
         <p class="description">
-          Passionate about software testing, quality assurance, and developing reliable applications. Strong
-          interest in data science research, analytics, and applying technology
-          to solve real-world problems.
+          Computer Science graduate passionate about machine learning, deep learning, and building
+          AI-powered applications. I enjoy taking ideas from research to working products, from
+          on-device image classification to sensor-based intelligent systems, and I'm eager to
+          apply my skills to solve real-world problems.
         </p>
         <a href="resume/index.html" class="cv-btn">
           <i class="fas fa-file-pdf"></i> View Resume
@@ -57,44 +59,44 @@
 
 
   <!-- ===== ABOUT SECTION ===== -->
-<section class="section" id="about">
-  <div class="about-grid">
-    <div class="about-content">
-      <h2 class="section-title">About Me</h2>
-      <p>Passionate about ensuring software quality through testing, quality assurance practices, and continuous
-        improvement.
-        Interested in data science and machine learning research, with a focus on applying analytical and
-        problem-solving skills to
-        real-world challenges. Experienced in web application development, software testing, and building reliable,
-        user-focused solutions.</p>
-      <p>With a strong background in both academia and industry, I bridge the gap between cutting-edge research and
-        practical applications.</p>
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <p>I'm a Computer Science graduate who is building my path in artificial intelligence and machine learning.
+          I'm especially interested in deep learning, computer vision, and intelligent systems that solve
+          practical problems.</p>
+        <p>I learn best by building. So far, I've developed an offline flower identification app using
+          MobileNetV2 and TensorFlow Lite, and designed a multi-sensor rehabilitation wristband framework that I've
+          submitted as a research paper. I'm still growing, and I'm looking for opportunities where I can learn from
+          experienced teams and contribute as I go.</p>
 
-      <div class="about-boxes">
-        <!-- Left: Academic Excellence -->
-        <div class="about-box">
-          <h3>🎓 Academic Excellence</h3>
-          <p>Completed B.Sc. in Computer Science and Engineering at Jahangirnagar University with CGPA of 3.66/4.00.</p>
-        </div>
+        <div class="about-boxes">
+          <!-- Left: Academic Excellence -->
+          <div class="about-box">
+            <h3>🎓 Academic Excellence</h3>
+            <p>Completed B.Sc. in Computer Science and Engineering at Jahangirnagar University with CGPA of 3.66/4.00.
+            </p>
+          </div>
 
-        <!-- Right: Skills -->
-        <div class="about-box">
-          <h3>🛠️ Skills</h3>
-          <div class="skills">
-            <span class="skill-tag">Manual Testing</span>
-            <span class="skill-tag">Test Case Design</span>
-            <span class="skill-tag">Bug Reporting</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Django</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">GitHub</span>
+          <!-- Right: Skills -->
+          <div class="about-box">
+            <h3>🛠️ Skills</h3>
+            <div class="skills">
+              <span class="skill-tag">Manual Testing</span>
+              <span class="skill-tag">Test Case Design</span>
+              <span class="skill-tag">Bug Reporting</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -272,6 +274,49 @@
 
 
 
+  <!-- ===== RESEARCH SECTION ===== -->
+  <section class="section" id="research">
+    <div class="research-container">
+      <h2 class="section-title">Research</h2>
+
+      <p class="research-intro">
+        I am drawn to research because it lets me turn curiosity into evidence. I enjoy working with data,
+        machine learning, and embedded systems to understand real-world problems and testing ideas
+        carefully before claiming they work. I believe good research is honest about its limitations,
+        and that is the approach I try to follow in my work.
+      </p>
+
+      <div class="research-card">
+        <div class="research-card-top">
+          <h3 class="research-title">Smart Rehabilitation Wristband: A Multi-Sensor Wearable Framework with
+            Dual-Condition Alert Logic for Home-Based Wrist Rehabilitation Monitoring</h3>
+          <span class="research-badge"><i class="fas fa-hourglass-half"></i> Under Review</span>
+        </div>
+
+        <p class="research-desc">
+          Designed a wearable wristband that combines an IMU, surface EMG, flex sensor, and PPG heart-rate
+          sensor on an ESP32 to monitor home-based wrist rehabilitation. Built an interpretable Readiness Score
+          with a dual-condition alert mechanism, and evaluated it through a controlled synthetic simulation of
+          five rehabilitation scenarios (1,000 sessions, 301,000 observations).
+        </p>
+
+        <div class="research-tags">
+          <span class="skill-tag">ESP32</span>
+          <span class="skill-tag">Sensor Fusion</span>
+          <span class="skill-tag">EMG</span>
+          <span class="skill-tag">IMU</span>
+          <span class="skill-tag">PPG</span>
+          <span class="skill-tag">Simulation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
   <!-- ===== CONTACT BAR (footer) ===== -->
   <footer class="contact-bar" id="contact">
     <div class="contact-bar-inner">
@@ -337,6 +382,10 @@
     <a href="#projects">
       <i class="fas fa-code"></i>
       <span>Projects</span>
+    </a>
+    <a href="#research">
+      <i class="fas fa-flask"></i>
+      <span>Research</span>
     </a>
     <a href="#contact">
       <i class="fas fa-envelope"></i>

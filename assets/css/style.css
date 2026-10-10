@@ -311,7 +311,7 @@ body {
    ============================================ */
 #projects {
   /* Section background: eta change korle card er color change hobe na */
-  --projects-bg: linear-gradient(135deg,  #eaf5f5, #556a65);
+  --projects-bg: linear-gradient(135deg,  #c7d0ce, #75837f);
 
   /* Card er fixed color: section background er upor depend kore na */
   --card-bg: #184636;
@@ -1090,5 +1090,94 @@ footer#contact.contact-bar {
   .contact-right .skill-tag {
     font-size: 0.5rem;
     padding: 2px 6px;
+  }
+}
+
+
+
+/* ===== RESEARCH SECTION ===== */
+#research {
+  background: linear-gradient(135deg, #f5f0e6, #e8e0d5);
+  color: #1e2a2a;
+}
+
+.research-container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.research-intro {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 24px;
+}
+
+.research-card {
+  background: white;
+  border-radius: 14px;
+  padding: 24px 26px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: all 0.3s;
+}
+
+.research-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.research-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.research-title {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: #0a3d2f;
+  font-weight: 600;
+}
+
+.research-badge {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff3cd;
+  color: #8a6d00;
+  border: 1px solid #ffd54f;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.research-desc {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #1e2a2a;
+  margin-bottom: 14px;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .research-card-top {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  .research-title {
+    font-size: 1.05rem;
   }
 }
