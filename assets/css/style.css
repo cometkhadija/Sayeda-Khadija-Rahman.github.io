@@ -132,11 +132,12 @@ body {
 .description {
   font-size: 0.95rem;
   line-height: 1.7;
-  max-width: 450px;
+  width: 100%;
+  max-width: none;
   margin-bottom: 20px;
   opacity: 0.9;
+  box-sizing: border-box;
 }
-
 .cv-btn {
   background: white;
   color: #124243;
@@ -229,12 +230,18 @@ body {
   font-size: 0.75rem;
   color: #666;
 }
-
 /* ============================================
    ===== PROJECTS SECTION =====
    ============================================ */
 #projects {
-  background: linear-gradient(135deg, #1a4a3f, #0e3d32);
+  /* Section background: eta change korle card er color change hobe na */
+  --projects-bg: linear-gradient(135deg,  #eaf5f5, #556a65);
+
+  /* Card er fixed color: section background er upor depend kore na */
+  --card-bg: #184636;
+  --card-bg-hover: #1f4c3c;
+
+  background: var(--projects-bg);
   padding: 40px 5% 25px;
   display: flex;
   align-items: flex-start;
@@ -255,17 +262,19 @@ body {
 .projects-title {
   font-size: clamp(1.6rem, 2.8vw, 2.2rem);
   font-weight: 700;
-  color: #ffd54f;
+  color: #5f1a11;
   margin-bottom: 4px;
   letter-spacing: -1px;
 }
 
 .projects-subtitle {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   line-height: 1.5;
-  max-width: 500px;
+  max-width: 80%;
   margin: 0 auto;
   opacity: 0.85;
+  
+  color: #000000 !important;
 }
 
 .projects-grid {
@@ -276,7 +285,7 @@ body {
 
 /* ===== PROJECT CARD ===== */
 .project-card {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   border-radius: 14px;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -290,7 +299,7 @@ body {
 
 .project-card:hover {
   transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--card-bg-hover);
   border-color: rgba(255, 213, 79, 0.3);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
@@ -298,7 +307,7 @@ body {
 .project-image-wrapper {
   width: 100%;
   height: 250px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   overflow: hidden;
   flex-shrink: 0;
   position: relative;
@@ -311,7 +320,7 @@ body {
   left: 0;
   right: 0;
   height: 30%;
-  background: linear-gradient(to top, rgba(26, 74, 63, 0.9), transparent);
+  background: linear-gradient(to top, var(--card-bg), transparent);
 }
 
 .project-image {
@@ -598,31 +607,31 @@ body {
     height: auto;
     min-height: 100vh;
   }
-  
+
   #contact {
     height: auto;
     min-height: 100vh;
     padding: 20px 0;
   }
-  
+
   .contact-left-full {
     border-right: none;
     padding: 10px 20px;
     text-align: center;
   }
-  
+
   .contact-sincerity-full {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .contact-sincerity-full span {
     padding: 4px 12px;
     background: rgba(255, 255, 255, 0.04);
     border-radius: 12px;
   }
-  
+
   .contact-middle-full {
     border-right: none;
     padding: 10px 20px;
@@ -630,17 +639,17 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .contact-item-full {
     flex: 1;
     min-width: 180px;
   }
-  
+
   .contact-right-full {
     padding: 10px 20px;
     text-align: center;
   }
-  
+
   .skills-grid-full {
     justify-content: center;
   }
@@ -651,25 +660,25 @@ body {
     padding: 20px 4%;
     gap: 15px;
   }
-  
+
   .contact-left-full h3 {
     font-size: 1.1rem;
   }
-  
+
   .contact-left-full p {
     font-size: 0.82rem;
   }
-  
+
   .contact-item-full {
     min-width: 150px;
     padding: 8px 12px;
   }
-  
+
   .contact-item-full span,
   .contact-item-full a {
     font-size: 0.78rem;
   }
-  
+
   .skill-tag-full {
     font-size: 0.7rem;
     padding: 5px 12px;
@@ -681,58 +690,59 @@ body {
     padding: 15px 3%;
     gap: 12px;
   }
-  
+
   .contact-left-full {
     padding: 5px 10px;
   }
-  
+
   .contact-left-full h3 {
     font-size: 1rem;
   }
-  
+
   .contact-left-full p {
     font-size: 0.78rem;
   }
-  
+
   .contact-sincerity-full span {
     font-size: 0.75rem;
     padding: 3px 8px;
   }
-  
+
   .contact-middle-full {
     padding: 5px 10px;
     flex-direction: column;
   }
-  
+
   .contact-item-full {
     min-width: auto;
     width: 100%;
     padding: 8px 12px;
   }
-  
+
   .contact-item-full i {
     font-size: 0.9rem;
     width: 20px;
   }
-  
+
   .contact-item-full span,
   .contact-item-full a {
     font-size: 0.75rem;
   }
-  
+
   .contact-right-full {
     padding: 5px 10px;
   }
-  
+
   .contact-right-full h4 {
     font-size: 0.9rem;
   }
-  
+
   .skill-tag-full {
     font-size: 0.65rem;
     padding: 4px 10px;
   }
 }
+
 /* ===== BOTTOM NAV (MOBILE) ===== */
 .bottom-nav {
   display: none;
@@ -805,6 +815,7 @@ body {
     opacity: 0;
     transform: scale(0.9) translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -931,46 +942,46 @@ body {
     text-align: center;
     gap: 20px;
   }
-  
+
   .home-image img {
     max-width: 240px;
     margin: 0 auto;
   }
-  
+
   .description {
     margin: 0 auto 18px;
   }
-  
+
   .section {
     padding: 50px 5% 30px;
   }
-  
+
   .contact-navbar {
     flex-direction: column;
     align-items: stretch;
     gap: 8px;
     padding: 12px 16px;
   }
-  
+
   .contact-left {
     justify-content: center;
     flex-wrap: wrap;
   }
-  
+
   .contact-text {
     white-space: normal;
   }
-  
+
   .contact-middle {
     justify-content: center;
     gap: 8px;
   }
-  
+
   .contact-right {
     justify-content: center;
     gap: 4px;
   }
-  
+
   .contact-right .skill-tag {
     font-size: 0.55rem;
     padding: 2px 8px;
@@ -981,82 +992,82 @@ body {
   .nav-right {
     display: none;
   }
-  
+
   .bottom-nav {
     display: flex;
   }
-  
+
   body {
     padding-bottom: 50px;
   }
-  
+
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 16px;
     max-width: 380px;
     margin: 0 auto;
   }
-  
+
   .project-card {
     min-height: 280px;
     max-height: 380px;
   }
-  
+
   .project-image-wrapper {
     height: 120px;
   }
-  
+
   .about-stats {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
-  
+
   .stat {
     padding: 12px 8px;
   }
-  
+
   .stat h3 {
     font-size: 1.3rem;
   }
-  
+
   .modal-content {
     padding: 20px;
   }
-  
+
   .modal-actions {
     flex-direction: column;
   }
-  
+
   .modal-github-btn,
   .modal-close-btn {
     flex: none;
     width: 100%;
   }
-  
+
   #contact {
     padding: 12px 4%;
   }
-  
+
   .contact-navbar {
     padding: 10px 12px;
     gap: 6px;
     border-radius: 10px;
   }
-  
+
   .contact-left {
     flex-direction: column;
     gap: 4px;
     text-align: center;
   }
-  
+
   .contact-greeting {
     font-size: 0.75rem;
   }
-  
+
   .contact-text {
     font-size: 0.65rem;
   }
-  
+
   .contact-link {
     width: 28px;
     height: 28px;
@@ -1068,82 +1079,82 @@ body {
   .section {
     padding: 40px 4% 20px;
   }
-  
+
   .name {
     font-size: 1.8rem;
   }
-  
+
   .title {
     font-size: 1rem;
   }
-  
+
   .home-image img {
     max-width: 170px;
   }
-  
+
   .project-card {
     min-height: 240px;
     max-height: 340px;
   }
-  
+
   .project-image-wrapper {
     height: 100px;
   }
-  
+
   .project-content {
     padding: 10px 12px 12px;
   }
-  
+
   .project-title {
     font-size: 0.85rem;
     min-height: 28px;
   }
-  
+
   .project-description {
     font-size: 0.7rem;
   }
-  
+
   .project-buttons {
     grid-template-columns: 1fr;
     gap: 4px;
   }
-  
+
   .about-stats {
     grid-template-columns: 1fr;
   }
-  
+
   .modal-content {
     padding: 15px;
   }
-  
+
   .modal-content h2 {
     font-size: 1.2rem;
   }
-  
+
   #contact {
     padding: 8px 3%;
   }
-  
+
   .contact-navbar {
     padding: 8px 10px;
     gap: 4px;
     border-radius: 8px;
   }
-  
+
   .contact-greeting {
     font-size: 0.7rem;
   }
-  
+
   .contact-text {
     font-size: 0.6rem;
   }
-  
+
   .contact-link {
     width: 24px;
     height: 24px;
     font-size: 0.65rem;
   }
-  
+
   .contact-right .skill-tag {
     font-size: 0.5rem;
     padding: 2px 6px;
