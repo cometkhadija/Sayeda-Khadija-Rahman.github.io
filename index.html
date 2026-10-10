@@ -86,11 +86,6 @@
 
 
 
-
-
-
-
-
   <section class="section" id="projects">
     <div class="projects-container">
       <div class="projects-header">
@@ -104,10 +99,51 @@
 
       <div class="projects-grid">
 
+
+
         <!-- Project Card 1 -->
-
-
         <div class="project-card" data-project="1">
+          <div class="project-image-wrapper">
+            <img src="assets/images/flora_identify.png" alt="Flora Identify Flower Recognition App"
+              class="project-image">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Flora Identify: AI-Powered Flower Identification App</h3>
+
+            <p class="project-description">
+              An AI-powered Android application that identifies 26 flower classes
+              using an on-device TensorFlow Lite model.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">TensorFlow Lite</span>
+              <span class="tech-tag">MobileNetV2</span>
+              <span class="tech-tag more">+1</span>
+            </div>
+
+            <div class="project-buttons">
+              <button class="btn-view" data-project="1">View Details</button>
+
+              <a href="https://github.com/cometkhadija/flower_detection_project" target="_blank"
+                rel="noopener noreferrer" class="btn-github">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- Project Card 2 -->
+
+
+        <div class="project-card" data-project="2">
           <div class="project-image-wrapper">
             <img src="assets/images/creator_hub.png" alt="CreatorHub Ecommerce Platform" class="project-image">
           </div>
@@ -123,7 +159,7 @@
               <span class="tech-tag more">+1</span>
             </div>
             <div class="project-buttons">
-              <button class="btn-view" data-project="1">View Details</button>
+              <button class="btn-view" data-project="2">View Details</button>
               <a href="https://github.com/cometkhadija/Prideproject" target="_blank" class="btn-github">
                 <i class="fab fa-github"></i> Code
               </a>
@@ -133,10 +169,10 @@
 
 
 
-        <!-- Project Card 2 -->
-        <div class="project-card" data-project="2">
+        <!-- Project Card 3 -->
+        <div class="project-card" data-project="3">
           <div class="project-image-wrapper">
-            <img src="assets/images/hostel_companion.png" alt="AI-Powered Career Plan Adviser" class="project-image">
+            <img src="assets/images/hostel_companion.png" alt="AI-Powered Hostel Companion" class="project-image">
           </div>
           <div class="project-content">
             <h3 class="project-title">AI-Powered Career Plan Adviser</h3>
@@ -150,7 +186,7 @@
               <span class="tech-tag more">+3</span>
             </div>
             <div class="project-buttons">
-              <button class="btn-view" data-project="2">View Details</button>
+              <button class="btn-view" data-project="3">View Details</button>
               <a href="https://github.com/cometkhadija/my_app" target="_blank" class="btn-github">
                 <i class="fab fa-github"></i> Code
               </a>
@@ -160,31 +196,13 @@
 
 
 
-        <!-- Project Card 3 -->
-        <div class="project-card" data-project="3">
-          <div class="project-image-wrapper">
-            <img src="assets/images/project3-logo.png" alt="Knowledge Graph QA System" class="project-image">
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Manual Quality Assurance and System Testing of an AI-Powered Career Plan Adviser Mobile Application</h3>
-            <p class="project-description">The AI-Powered Career Plan Adviser is a mobile-first application designed to provide students
-with structured, year-wise, and goal-oriented career guidance.</p>
-            <div class="project-tech">
-              <span class="tech-tag">Neo4j</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">NLP</span>
-              <span class="tech-tag">Transformers</span>
-              <span class="tech-tag">Flask</span>
-              <span class="tech-tag more">+1</span>
-            </div>
-            <div class="project-buttons">
-              <button class="btn-view" data-project="3">View Details</button>
-              <a href="https://github.com" target="_blank" class="btn-github">
-                <i class="fab fa-github"></i> Code
-              </a>
-            </div>
-          </div>
-        </div>
+
+
+
+
+
+
+
 
       </div>
     </div>
@@ -198,89 +216,90 @@ with structured, year-wise, and goal-oriented career guidance.</p>
 
 
   <!-- ===== PROJECT DETAIL MODAL ===== -->
-<div class="modal-overlay" id="projectModal" onclick="closeProjectOutside(event)">
-  <div class="modal-content">
-    <h2 id="modalTitle">Project Title</h2>
-    <div class="modal-body">
-      <p id="modalDescription">Full project description goes here.</p>
+  <div class="modal-overlay" id="projectModal" onclick="closeProjectOutside(event)">
+    <div class="modal-content">
+      <h2 id="modalTitle">Project Title</h2>
+      <div class="modal-body">
+        <p id="modalDescription">Full project description goes here.</p>
 
-      <div class="modal-tech">
-        <h4>Technologies Used</h4>
-        <div id="modalTech" class="tech-tags-modal"></div>
+        <div class="modal-tech">
+          <h4>Technologies Used</h4>
+          <div id="modalTech" class="tech-tags-modal"></div>
+        </div>
+
+        <div class="modal-features">
+          <h4>Key Features</h4>
+          <ul id="modalFeatures"></ul>
+        </div>
       </div>
 
-      <div class="modal-features">
-        <h4>Key Features</h4>
-        <ul id="modalFeatures"></ul>
-      </div>
-    </div>
-
-    <div class="modal-actions">
-      <a href="#" id="modalGithub" target="_blank" rel="noopener" class="modal-github-btn">
-        <i class="fab fa-github"></i> View on GitHub
-      </a>
-      <button class="modal-close-btn" onclick="closeProject()">Close</button>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-<!-- ===== CONTACT SECTION ===== -->
-<section class="section" id="contact">
-  <div class="contact-full">
-    <!-- Left: About Me -->
-    <div class="contact-left-full">
-      <h3>Let's Connect</h3>
-      <p>I'm always open to discussing new projects, research collaborations, or exciting opportunities in AI/ML and full-stack development. Feel free to reach out—I'd love to hear from you!</p>
-      <div class="contact-sincerity-full">
-        <span>💡 Passionate about AI/ML</span>
-        <span>🚀 Full-Stack Developer</span>
-        <span>📚 Lifelong Learner</span>
-      </div>
-    </div>
-
-    <!-- Middle: Contact Info -->
-    <div class="contact-middle-full">
-      <div class="contact-item-full">
-        <i class="fas fa-envelope"></i>
-        <span>sayedakhadija@gmail.com</span>
-      </div>
-      <div class="contact-item-full">
-        <i class="fas fa-phone"></i>
-        <span>+880 1234 567890</span>
-      </div>
-      <div class="contact-item-full">
-        <i class="fab fa-github"></i>
-        <a href="#" target="_blank">github.com/sayedakhadija</a>
-      </div>
-      <div class="contact-item-full">
-        <i class="fab fa-linkedin-in"></i>
-        <a href="#" target="_blank">linkedin.com/in/sayedakhadija</a>
-      </div>
-    </div>
-
-    <!-- Right: Skills Box -->
-    <div class="contact-right-full">
-      <h4>Skills</h4>
-      <div class="skills-grid-full">
-        <span class="skill-tag-full">Manual Testing</span>
-        <span class="skill-tag-full">Test Case Design</span>
-        <span class="skill-tag-full">Bug Reporting</span>
-        <span class="skill-tag-full">SQL</span>
-        <span class="skill-tag-full">Python</span>
-        <span class="skill-tag-full">Django</span>
-        <span class="skill-tag-full">Git</span>
-        <span class="skill-tag-full">GitHub</span>
+      <div class="modal-actions">
+        <a href="#" id="modalGithub" target="_blank" rel="noopener" class="modal-github-btn">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <button class="modal-close-btn" onclick="closeProject()">Close</button>
       </div>
     </div>
   </div>
-</section>
+
+
+
+
+
+
+
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="contact-full">
+      <!-- Left: About Me -->
+      <div class="contact-left-full">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new projects, research collaborations, or exciting opportunities in AI/ML and
+          full-stack development. Feel free to reach out—I'd love to hear from you!</p>
+        <div class="contact-sincerity-full">
+          <span>💡 Passionate about AI/ML</span>
+          <span>🚀 Full-Stack Developer</span>
+          <span>📚 Lifelong Learner</span>
+        </div>
+      </div>
+
+      <!-- Middle: Contact Info -->
+      <div class="contact-middle-full">
+        <div class="contact-item-full">
+          <i class="fas fa-envelope"></i>
+          <span>sayedakhadija@gmail.com</span>
+        </div>
+        <div class="contact-item-full">
+          <i class="fas fa-phone"></i>
+          <span>+880 1234 567890</span>
+        </div>
+        <div class="contact-item-full">
+          <i class="fab fa-github"></i>
+          <a href="#" target="_blank">github.com/sayedakhadija</a>
+        </div>
+        <div class="contact-item-full">
+          <i class="fab fa-linkedin-in"></i>
+          <a href="#" target="_blank">linkedin.com/in/sayedakhadija</a>
+        </div>
+      </div>
+
+      <!-- Right: Skills Box -->
+      <div class="contact-right-full">
+        <h4>Skills</h4>
+        <div class="skills-grid-full">
+          <span class="skill-tag-full">Manual Testing</span>
+          <span class="skill-tag-full">Test Case Design</span>
+          <span class="skill-tag-full">Bug Reporting</span>
+          <span class="skill-tag-full">SQL</span>
+          <span class="skill-tag-full">Python</span>
+          <span class="skill-tag-full">Django</span>
+          <span class="skill-tag-full">Git</span>
+          <span class="skill-tag-full">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <!-- ===== BOTTOM NAVIGATION (Mobile) ===== -->

@@ -101,7 +101,39 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== PROJECT DATA =====
     // ============================================
     const projectData = {
+
+
         1: {
+            title: 'Flora Identify: AI-Powered Flower Identification App',
+
+            description: 'Flora Identify is an AI-powered Flutter Android application that identifies 26 flower classes using a MobileNetV2-based image classification model converted to TensorFlow Lite for offline, on-device inference. The app provides flower information in English and Bangla, including medicinal properties, cultivation guidance, and skincare benefits.',
+
+            tech: [
+                'Flutter',
+                'Python',
+                'TensorFlow',
+                'TensorFlow Lite',
+                'MobileNetV2',
+                'Computer Vision'
+            ],
+
+            features: [
+                'Flower identification using images captured by the camera or selected from the gallery',
+                'AI-based classification across 26 flower classes',
+                'Offline, on-device inference using TensorFlow Lite',
+                'English and Bangla flower information',
+                'Scientific names and flower descriptions',
+                'Information on medicinal properties',
+                'Flower cultivation guidance',
+                'Skincare-related flower information',
+                'Lightweight model optimized for mobile deployment'
+            ],
+
+            github: 'https://github.com/cometkhadija/flower_detection_project'
+        },
+
+
+        2: {
             title: 'CreatorHub Ecommerce Platform',
             description: 'JU Creator\'s Hub is a student-powered e-commerce platform dedicated to the creative and entrepreneurial minds of Jahangirnagar University. Within the campus, many students independently run small businesses—ranging from handmade jewelry and crafts to home-cooked meals and customized clothing. Despite their potential, these initiatives often lack the digital exposure and structured systems needed to grow. This platform aims to bridge that gap by offering a centralized online space where student-led ventures can thrive. It supports both sellers and buyers within the JU community, encouraging innovation, self-reliance, and a spirit of collaboration.',
             tech: ['HTML', 'CSS', 'Django', 'JavaScript', 'SQLite'],
@@ -125,8 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
 
-        2: {
-            title: 'AI-Powered Career Plan Adviser',
+        3: {
+            title: 'AI-Powered Hostel Companion',
             description: 'This project aims to develop an intelligent, user-friendly Android application that leverages AI to provide personalized career guidance for Computer Science and Engineering students. By integrating advanced AI models with a robust online backend, the app will deliver tailored recommendations, year-wise preparation plans, and real-time market insights. This solution will empower students to make informed career decisions and better prepare for their professional journeys.',
             tech: ['Android Studio', 'Django REST Framework', 'TensorFlow', 'Retrofit', 'Scikit-learn', 'JWT Tokens', 'PostgreSQL'],
             features: [
@@ -138,19 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
             ],
             github: 'https://github.com/cometkhadija/my_app'
         },
-        3: {
-            title: 'Knowledge Graph QA System',
-            description: 'A semantic question answering system that processes natural language queries and retrieves answers from a Bangla knowledge graph. Built for low-resource language processing with transformer-based models.',
-            tech: ['Neo4j', 'Python', 'NLP', 'Transformers', 'Flask'],
-            features: [
-                'Natural language understanding for Bangla queries',
-                'Graph-based knowledge retrieval and reasoning',
-                'Transformer-based semantic parsing',
-                'Interactive query interface with visualization',
-                'Support for complex multi-hop questions'
-            ],
-            github: 'https://github.com/yourusername/knowledge-qa'
-        },
+
+
+
         4: {
             title: 'Thunderstorm Forecasting',
             description: 'A machine learning model that predicts thunderstorm events using historical climate data of Bangladesh. The system uses ensemble methods and time-series analysis for accurate weather prediction.',
