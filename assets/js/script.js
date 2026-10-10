@@ -43,11 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== SMOOTH SCROLL ON CLICK =====
     document.querySelectorAll('a[href^="#"]').forEach(link => {
         link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+
+            // ✅ শুধু valid anchor (#section) হলে smooth scroll করো
+            // "#" একা হলে বা external link হলে skip করো
+            if (!href || href === '#' || href.length <= 1) return;
+
+            // ✅ modal-এর GitHub button skip করো
+            if (link.id === 'modalGithub') return;
+
             e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
-                history.pushState(null, null, link.getAttribute('href'));
+                history.pushState(null, null, href);
             }
         });
     });
@@ -55,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== CONTACT FORM =====
     const form = document.getElementById('contactForm');
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
@@ -85,6 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+
+
+
     // ============================================
     // ===== PROJECT DATA =====
     // ============================================
@@ -109,8 +121,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Product moderation to review, edit, or remove listings',
                 'Order tracking overview for monitoring platform-wide order activities'
             ],
-            github: 'https://github.com/yourusername/creatorhub'
+            github: 'https://github.com/cometkhadija/Prideproject'
         },
+
+
         2: {
             title: 'AI-Powered Career Plan Adviser',
             description: 'This project aims to develop an intelligent, user-friendly Android application that leverages AI to provide personalized career guidance for Computer Science and Engineering students. By integrating advanced AI models with a robust online backend, the app will deliver tailored recommendations, year-wise preparation plans, and real-time market insights. This solution will empower students to make informed career decisions and better prepare for their professional journeys.',
@@ -122,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 'Progress Tracking with visual analytics',
                 'AI Assistance for personalized recommendations'
             ],
-            github: 'https://github.com/yourusername/career-adviser'
+            github: 'https://github.com/cometkhadija/my_app'
         },
         3: {
             title: 'Knowledge Graph QA System',
@@ -168,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     // ===== OPEN PROJECT MODAL =====
     // ============================================
-    window.openProject = function(id) {
+    window.openProject = function (id) {
         console.log("🔍 Opening project:", id);
         const project = projectData[id];
         if (!project) {
@@ -211,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     // ===== CLOSE PROJECT MODAL =====
     // ============================================
-    window.closeProject = function() {
+    window.closeProject = function () {
         document.getElementById('projectModal').classList.remove('active');
         document.body.style.overflow = '';
     };
@@ -219,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================
     // ===== CLOSE ON OUTSIDE CLICK =====
     // ============================================
-    window.closeProjectOutside = function(event) {
+    window.closeProjectOutside = function (event) {
         if (event.target === event.currentTarget) {
             closeProject();
         }
@@ -240,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleViewDetails(button) {
         const projectId = button.dataset.project;
         console.log("🎯 View Details clicked! Project ID:", projectId);
-        
+
         if (projectId) {
             const id = parseInt(projectId);
             if (projectData[id]) {
@@ -256,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add click listeners to all .btn-view buttons
     document.querySelectorAll('.btn-view').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             handleViewDetails(this);
@@ -264,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Fallback: Handle dynamically added buttons or clicks
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         const btn = e.target.closest('.btn-view');
         if (btn && !btn._listenerAdded) {
             btn._listenerAdded = true;

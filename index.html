@@ -73,7 +73,24 @@
     </div>
   </section>
 
+
+
+
+
+
+
+
+
+
   <!-- ===== PROJECTS SECTION ===== -->
+
+
+
+
+
+
+
+
   <section class="section" id="projects">
     <div class="projects-container">
       <div class="projects-header">
@@ -88,6 +105,8 @@
       <div class="projects-grid">
 
         <!-- Project Card 1 -->
+
+
         <div class="project-card" data-project="1">
           <div class="project-image-wrapper">
             <img src="assets/images/creator_hub.png" alt="CreatorHub Ecommerce Platform" class="project-image">
@@ -105,17 +124,19 @@
             </div>
             <div class="project-buttons">
               <button class="btn-view" data-project="1">View Details</button>
-              <a href="https://github.com" target="_blank" class="btn-github">
+              <a href="https://github.com/cometkhadija/Prideproject" target="_blank" class="btn-github">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
           </div>
         </div>
 
+
+
         <!-- Project Card 2 -->
         <div class="project-card" data-project="2">
           <div class="project-image-wrapper">
-            <img src="assets/images/iPhone 16 - 3.png" alt="AI-Powered Career Plan Adviser" class="project-image">
+            <img src="assets/images/hostel_companion.png" alt="AI-Powered Career Plan Adviser" class="project-image">
           </div>
           <div class="project-content">
             <h3 class="project-title">AI-Powered Career Plan Adviser</h3>
@@ -130,12 +151,14 @@
             </div>
             <div class="project-buttons">
               <button class="btn-view" data-project="2">View Details</button>
-              <a href="https://github.com" target="_blank" class="btn-github">
+              <a href="https://github.com/cometkhadija/my_app" target="_blank" class="btn-github">
                 <i class="fab fa-github"></i> Code
               </a>
             </div>
           </div>
         </div>
+
+
 
         <!-- Project Card 3 -->
         <div class="project-card" data-project="3">
@@ -167,33 +190,46 @@ with structured, year-wise, and goal-oriented career guidance.</p>
     </div>
   </section>
 
+
+
+
+
+
+
+
   <!-- ===== PROJECT DETAIL MODAL ===== -->
-  <div class="modal-overlay" id="projectModal" onclick="closeProjectOutside(event)">
-    <div class="modal-content">
-      <h2 id="modalTitle">Project Title</h2>
-      <div class="modal-body">
-        <p id="modalDescription">Full project description goes here.</p>
-        <div class="modal-tech">
-          <h4>Technologies Used</h4>
-          <div id="modalTech" class="tech-tags-modal"></div>
-        </div>
-        <div class="modal-features">
-          <h4>Key Features</h4>
-          <ul id="modalFeatures">
-            <li>Feature 1</li>
-            <li>Feature 2</li>
-            <li>Feature 3</li>
-          </ul>
-        </div>
+<div class="modal-overlay" id="projectModal" onclick="closeProjectOutside(event)">
+  <div class="modal-content">
+    <h2 id="modalTitle">Project Title</h2>
+    <div class="modal-body">
+      <p id="modalDescription">Full project description goes here.</p>
+
+      <div class="modal-tech">
+        <h4>Technologies Used</h4>
+        <div id="modalTech" class="tech-tags-modal"></div>
       </div>
-      <div class="modal-actions">
-        <a href="#" id="modalGithub" target="_blank" class="modal-github-btn">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-        <button class="modal-close-btn" onclick="closeProject()">Close</button>
+
+      <div class="modal-features">
+        <h4>Key Features</h4>
+        <ul id="modalFeatures"></ul>
       </div>
     </div>
+
+    <div class="modal-actions">
+      <a href="#" id="modalGithub" target="_blank" rel="noopener" class="modal-github-btn">
+        <i class="fab fa-github"></i> View on GitHub
+      </a>
+      <button class="modal-close-btn" onclick="closeProject()">Close</button>
+    </div>
   </div>
+</div>
+
+
+
+
+
+
+
 
 <!-- ===== CONTACT SECTION ===== -->
 <section class="section" id="contact">
