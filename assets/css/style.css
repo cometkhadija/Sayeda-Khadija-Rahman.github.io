@@ -82,8 +82,8 @@ body {
 
 .nav-right a:hover,
 .nav-right a.active {
-  color: #ffd54f;
-  border-bottom-color: #ffd54f;
+  color: #eee9d8;
+  border-bottom-color: #efe8ce;
 }
 
 
@@ -126,7 +126,7 @@ body {
   font-weight: 700;
   line-height: 1.1;
   margin: 6px 0 8px;
-  background: linear-gradient(to right, #fff, #ffd54f);
+  background: linear-gradient(to right, #fff, #ede5c9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -477,7 +477,7 @@ body {
 }
 
 .btn-view {
-  background: #ffd54f;
+  background: #f5f0e6;
   color: #0a3d2f;
   border: none;
   padding: 6px 10px;
